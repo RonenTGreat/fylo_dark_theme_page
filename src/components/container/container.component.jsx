@@ -1,5 +1,7 @@
 import intro from "../../images/illustration-intro.png"
 
+import productive from "../../images/illustration-stay-productive.png"
+
 import curveMobile from "../../images/bg-curvy-mobile.svg"
 
 import curveDesktop from "../../images/bg-curvy-desktop.svg"
@@ -14,6 +16,17 @@ import collaboration from "../../images/icon-collaboration.svg"
 
 import file from "../../images/icon-any-file.svg"
 
+import { BsFillArrowRightCircleFill } from "react-icons/bs"
+
+import profile1 from "../../images/profile-1.jpg"
+
+import profile2 from "../../images/profile-2.jpg"
+
+import profile3 from "../../images/profile-3.jpg"
+
+import Testimonial from "../testimonial/testimonial.component"
+
+
 
 const Container = () => {
   return (
@@ -23,7 +36,7 @@ const Container = () => {
       </section>
       <section className=" bg-main-color relative mb-20">
         <picture>
-          <source media="(max-width: 1440px)" srcset={curveDesktop} />
+          <source media="(max-width: 1440px)" srcSet={curveDesktop} />
           <img className=" bg-intro-color relative z-10 bottom-7" src={curveMobile} alt="intro" />
         </picture>
 
@@ -62,6 +75,41 @@ const Container = () => {
           head="Store any type of file"
           description="Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
   file types to be securely stored and shared."
+        />
+      </section>
+      <section className=" mt-32 ml-6">
+        <img className=" px-10 mb-5" src={productive} alt="illustration" />
+        <div>
+          <h2 className="font-raleway font-bold text-white py-4">Stay productive, wherever you are</h2>
+          <p className="pb-4 font-opensans text-gray-300">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+            storage needs.</p>
+          <p className="font-opensans text-gray-300 pb-4">Securely share files and folders with friends, family and colleagues for live collaboration. No email
+            attachments required.</p>
+          <a className=" text-sm font-opensans flex gap-3 text-mycyan border-mycyan border-b-2 w-[9.6rem] pb-1 hover:text-white hover:border-white" href="/#">See how Fylo works <BsFillArrowRightCircleFill className="mt-1 shadow-xl shadow-mycyan rounded-full" /> </a>
+        </div>
+      </section>
+      <section className=" mt-36 p-11">
+      <div className=" ml-3 bg-quote bg-no-repeat h-9"></div>
+        <Testimonial
+          description="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine."
+          profile={profile1}
+          name="Satish Patel"
+          title="Founder & CEO, Huddle"
+        />
+        <Testimonial
+          description="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine."
+          profile={profile2}
+          name="Bruce McKenzie"
+          title="Founder & CEO, Huddle"
+        />
+        <Testimonial
+          description="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine."
+          profile={profile3}
+          name="Iva Boyd"
+          title="Founder & CEO, Huddle"
         />
       </section>
     </main>
