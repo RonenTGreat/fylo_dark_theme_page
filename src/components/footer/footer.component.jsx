@@ -10,10 +10,11 @@ import { FiInstagram } from "react-icons/fi"
 
 const Footer = () => {
   return (
-    <footer className=" bg-footer-color w-full h-full text-gray-200 pt-72 px-5 mb-4">
+    <footer className=" bg-footer-color w-full h-full text-gray-200 pt-72 px-5 mb-4 font-opensans">
       <div className=" ml-5 mb-10"><img className="" src={logo} alt="logo" /></div>
       <div className="mb-4 text-left">
-        <p className=" flex gap-7"><img className=" object-contain mb-16" src={location} alt="" /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure amet id cumque, nemo illo qui atque distinctio in itaque! Molestiae earum harum sint tenetur debitis temporibus id sapiente modi maxime.</p>
+        <p className=" flex gap-7 max-w-xs"><img className=" object-contain mb-16" src={location} alt="" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua</p>
       </div>
 
       <div className=" flex flex-col mb-16">
