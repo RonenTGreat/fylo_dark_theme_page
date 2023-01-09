@@ -20,6 +20,9 @@ module.exports = {
         'testi-color': 'hsl(219, 30%, 18%)',
         'intro-color': 'hsl(217, 28%, 15%)',
       },
+      backgroundImage: {
+        'quote': "url('./src/images/bg-quotes.png')"
+      }
     },
   },
   plugins: [],
