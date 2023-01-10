@@ -35,7 +35,7 @@ const Footer = () => {
         <a href="/#">Privacy</a>
       </div>
 
-      <div className="flex gap-4 justify-center pb-7">
+      <div className="flex gap-4 justify-center pb-5">
         <a href="/#"><FaFacebookF className=" w-8 h-8 border rounded-full p-2 hover:text-mycyan hover:border-myblue" /></a>
         <a href="/#"><BsTwitter className=" w-8 h-8 border rounded-full p-2 hover:text-mycyan hover:border-myblue" /></a>
         <a href="/#"><FiInstagram className=" w-8 h-8 border rounded-full p-2 hover:text-mycyan hover:border-myblue" /></a>
