@@ -32,15 +32,15 @@ const Container = () => {
   return (
     <main className="pb-44 bg-main-color">
       <section className="bg-intro-color">
-        <img className="px-10 pt-4 relative z-30" src={intro} alt="hero image" />
+        <img className="px-10 pt-4 relative z-30 md:mx-auto" src={intro} alt="hero image" />
       </section>
       <section className=" bg-main-color relative mb-20">
         <picture>
           <source media="(max-width: 1440px)" srcSet={curveDesktop} />
-          <img className=" bg-intro-color relative z-10 bottom-7" src={curveMobile} alt="intro" />
+          <img className=" bg-intro-color relative z-10 bottom-7 md:bottom-0 md:pt-12" src={curveMobile} alt="intro" />
         </picture>
 
-        <h1 className="font-raleway font-bold relative z-10 bottom-24 text-3xl text-white text-center max-w-sm mx-auto">All your file in one secure location, accessible anywhere.</h1>
+        <h1 className="font-raleway font-bold relative z-10 bottom-24 text-4xl text-white text-center max-w-sm mx-auto md:bottom-[29rem] md:max-w-2xl">All your file in one secure location, accessible anywhere.</h1>
 
         <p className="font-opensans text-ms relative z-10 bottom-20 text-center text-gray-300 max-w-xs mx-auto">
           Fylo stores all your most important files in one secure location. Access them wherever
@@ -113,7 +113,7 @@ const Container = () => {
         />
       </section>
 
-      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-gray-900 shadow-xl relative z-30 top-80">
+      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-80">
         <h2 className="text-xl font-raleway font-bold text-white py-4 text-center">Get early access today</h2>
         <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
