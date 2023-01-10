@@ -30,7 +30,7 @@ import Testimonial from "../testimonial/testimonial.component"
 
 const Container = () => {
   return (
-    <main className="pb-40 bg-main-color">
+    <main className="pb-44 bg-main-color">
       <section className="bg-intro-color">
         <img className="px-10 pt-4 relative z-30" src={intro} alt="hero image" />
       </section>
@@ -88,7 +88,7 @@ const Container = () => {
           <a className=" text-sm font-opensans flex gap-3 text-mycyan border-mycyan border-b-2 w-[9.6rem] pb-1 hover:text-white hover:border-white" href="/#">See how Fylo works <BsFillArrowRightCircleFill className="mt-1 shadow-xl shadow-mycyan rounded-full" /> </a>
         </div>
       </section>
-      <section className=" mt-36 p-11">
+      <section className=" mt-36 px-11">
       <div className=" ml-3 bg-quote bg-no-repeat h-9"></div>
         <Testimonial
           description="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
@@ -111,6 +111,18 @@ const Container = () => {
           name="Iva Boyd"
           title="Founder & CEO, Huddle"
         />
+      </section>
+
+      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-gray-900 shadow-xl relative z-30 top-80">
+        <h2 className="text-xl font-raleway font-bold text-white py-4 text-center">Get early access today</h2>
+        <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.</p>
+        
+          <form className=" flex flex-col px-8" action="">
+          <input className="placeholder:text-gray-300 py-3 px-8 rounded-full" type="email" name="email" placeholder="email@example.com" />
+          <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan my-5 p-3 rounded-full" type="submit">Get Started For Free</button>
+          </form>
+    
       </section>
     </main>
   );
