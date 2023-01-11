@@ -77,10 +77,10 @@ const Container = () => {
   file types to be securely stored and shared."
         />
       </section>
-      <section className=" mt-32 ml-6">
+      <section className=" mt-32 ml-6 md:flex">
         <img className=" px-10 mb-5" src={productive} alt="illustration" />
-        <div>
-          <h2 className="font-raleway font-bold text-white py-4">Stay productive, wherever you are</h2>
+        <div className="md:mt-36 md:mr-16">
+          <h2 className="font-raleway font-bold text-white py-4 md:text-3xl md:max-w-xs">Stay productive, wherever you are</h2>
           <p className="pb-4 font-opensans text-gray-300">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
             storage needs.</p>
           <p className="font-opensans text-gray-300 pb-4">Securely share files and folders with friends, family and colleagues for live collaboration. No email
