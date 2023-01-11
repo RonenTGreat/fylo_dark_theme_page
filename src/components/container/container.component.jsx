@@ -51,7 +51,7 @@ const Container = () => {
           <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan w-72 p-3 rounded-full">Get Started</button>
         </div>
       </section>
-      <section>
+      <section className="md:grid md:grid-cols-2">
         <Feature
           img={device}
           head="Access your files, anywhere"
@@ -90,6 +90,7 @@ const Container = () => {
       </section>
       <section className=" mt-36 px-11">
       <div className=" ml-3 bg-quote bg-no-repeat h-9"></div>
+      <div className="md:flex gap-7">
         <Testimonial
           description="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
   become a well-oiled collaboration machine."
@@ -111,6 +112,7 @@ const Container = () => {
           name="Iva Boyd"
           title="Founder & CEO, Huddle"
         />
+        </div>
       </section>
 
       <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-80">
