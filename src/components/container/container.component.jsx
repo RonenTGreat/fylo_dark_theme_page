@@ -115,14 +115,14 @@ const Container = () => {
         </div>
       </section>
 
-      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-80">
-        <h2 className="text-xl font-raleway font-bold text-white py-4 text-center">Get early access today</h2>
-        <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-80 md:max-w-4xl md:mx-auto">
+        <h2 className="text-xl font-raleway font-bold text-white py-4 text-center md:text-2xl">Get early access today</h2>
+        <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto md:max-w-3xl">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
         
-          <form className=" flex flex-col px-8" action="">
-          <input className="placeholder:text-gray-300 py-3 px-8 rounded-full" type="email" name="email" placeholder="email@example.com" />
-          <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan my-5 p-3 rounded-full" type="submit">Get Started For Free</button>
+          <form className=" flex flex-col px-8 md:block md:px-16" action="">
+          <input className="placeholder:text-gray-300 py-3 px-8 outline-none rounded-full md:pr-80" type="email" name="email" placeholder="email@example.com" />
+          <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan my-5 p-3 rounded-full md:ml-6 md:w-[13rem] md:text-sm md:p-4" type="submit">Get Started For Free</button>
           </form>
     
       </section>
