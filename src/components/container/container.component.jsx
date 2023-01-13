@@ -42,12 +42,12 @@ const Container = () => {
 
         <h1 className="font-raleway font-bold relative z-10 bottom-24 text-4xl text-white text-center max-w-sm mx-auto md:bottom-[29rem] md:max-w-2xl">All your file in one secure location, accessible anywhere.</h1>
 
-        <p className="font-opensans text-ms relative z-10 bottom-20 text-center text-gray-300 max-w-xs mx-auto">
+        <p className="font-opensans text-ms relative z-10 bottom-20 text-center text-gray-300 max-w-xs mx-auto md:max-w-lg md:bottom-96">
           Fylo stores all your most important files in one secure location. Access them wherever
           you need, share and collaborate with friends family, and co-workers.
         </p>
 
-        <div className="relative z-10 bottom-12 grid place-content-center">
+        <div className="relative z-10 bottom-12 grid place-content-center md:bottom-96 md:mt-6">
           <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan w-72 p-3 rounded-full">Get Started</button>
         </div>
       </section>
