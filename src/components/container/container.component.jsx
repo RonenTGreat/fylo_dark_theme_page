@@ -32,26 +32,28 @@ const Container = () => {
   return (
     <main className="pb-44 bg-main-color">
       <section className="bg-intro-color">
-        <img className="px-10 pt-4 relative z-30 md:mx-auto" src={intro} alt="hero image" />
+        <img className="px-10 pt-4 relative z-10 top-5 md:mx-auto" src={intro} alt="hero image" />
       </section>
-      <section className=" bg-main-color relative mb-20">
+      <section className=" bg-main-color mb-20">
         <picture>
           <source media="(max-width: 1440px)" srcSet={curveDesktop} />
-          <img className=" bg-intro-color relative z-10 bottom-7 md:bottom-0 md:pt-12" src={curveMobile} alt="intro" />
+          <img className=" bg-intro-color absolute z-0 md:pt-12" src={curveMobile} alt="intro" />
         </picture>
 
-        <h1 className="font-raleway font-bold relative z-10 bottom-24 text-4xl text-white text-center max-w-sm mx-auto md:bottom-[29rem] md:max-w-2xl">All your file in one secure location, accessible anywhere.</h1>
+        <div className="absolute z-20 mt-20">
+        <h1 className="font-raleway font-bold text-3xl text-white text-center mx-auto mb-5 md:bottom-[29rem] md:max-w-2xl">All your file in one secure location, accessible anywhere.</h1>
 
-        <p className="font-opensans text-ms relative z-10 bottom-20 text-center text-gray-300 max-w-xs mx-auto md:max-w-lg md:bottom-96">
+        <p className="font-opensans text-sm text-center text-gray-300 max-w-xs mx-auto mb-8 md:max-w-lg">
           Fylo stores all your most important files in one secure location. Access them wherever
           you need, share and collaborate with friends family, and co-workers.
         </p>
 
-        <div className="relative z-10 bottom-12 grid place-content-center md:bottom-96 md:mt-6">
-          <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan w-72 p-3 rounded-full">Get Started</button>
+        <div className="grid place-content-center md:bottom-96 md:mt-6">
+          <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan w-72 p-4 rounded-full">Get Started</button>
+        </div>
         </div>
       </section>
-      <section className="md:grid md:grid-cols-2">
+      <section className="relative top-64 mt-52 md:grid md:grid-cols-2">
         <Feature
           img={device}
           head="Access your files, anywhere"
@@ -77,7 +79,7 @@ const Container = () => {
   file types to be securely stored and shared."
         />
       </section>
-      <section className=" mt-32 ml-6 md:flex">
+      <section className=" relative top-64 mt-32 ml-6 md:flex">
         <img className=" px-10 mb-5" src={productive} alt="illustration" />
         <div className="md:mt-36 md:mr-16">
           <h2 className="font-raleway font-bold text-white py-4 md:text-3xl md:max-w-xs">Stay productive, wherever you are</h2>
@@ -88,7 +90,7 @@ const Container = () => {
           <a className=" text-sm font-opensans flex gap-3 text-mycyan border-mycyan border-b-2 w-[9.6rem] pb-1 hover:text-white hover:border-white" href="/#">See how Fylo works <BsFillArrowRightCircleFill className="mt-1 shadow-xl shadow-mycyan rounded-full" /> </a>
         </div>
       </section>
-      <section className=" mt-36 px-11">
+      <section className="relative top-64 mt-36 px-11">
       <div className=" ml-3 bg-quote bg-no-repeat h-9"></div>
       <div className="md:flex gap-7">
         <Testimonial
@@ -115,7 +117,7 @@ const Container = () => {
         </div>
       </section>
 
-      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-80 md:max-w-4xl md:mx-auto">
+      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-[24rem] md:max-w-4xl md:mx-auto">
         <h2 className="text-xl font-raleway font-bold text-white py-4 text-center md:text-2xl">Get early access today</h2>
         <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto md:max-w-3xl">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
