@@ -34,16 +34,16 @@ const Container = () => {
       <section className="bg-intro-color">
         <img className="px-10 pt-4 relative z-10 top-5 md:mx-auto" src={intro} alt="hero image" />
       </section>
-      <section className=" bg-main-color mb-20">
+      <section className=" relative bg-main-color mb-20">
         <picture>
           <source media="(max-width: 1440px)" srcSet={curveDesktop} />
           <img className=" bg-intro-color absolute z-0 md:pt-12" src={curveMobile} alt="intro" />
         </picture>
 
-        <div className="absolute z-20 mt-20">
-        <h1 className="font-raleway font-bold text-3xl text-white text-center mx-auto mb-5 md:bottom-[29rem] md:max-w-2xl">All your file in one secure location, accessible anywhere.</h1>
+        <div className="absolute z-20 mt-20 md:ml-[25%]">
+        <h1 className="font-raleway font-bold text-4xl text-white text-center mx-auto mb-5 md:bottom-[29rem] md:max-w-2xl">All your file in one secure location, accessible anywhere.</h1>
 
-        <p className="font-opensans text-sm text-center text-gray-300 max-w-xs mx-auto mb-8 md:max-w-lg">
+        <p className="font-opensans text-sm text-center text-gray-300 max-w-xs mx-auto mb-8 md:text-sm md:max-w-md">
           Fylo stores all your most important files in one secure location. Access them wherever
           you need, share and collaborate with friends family, and co-workers.
         </p>
@@ -53,7 +53,7 @@ const Container = () => {
         </div>
         </div>
       </section>
-      <section className="relative top-64 mt-52 md:grid md:grid-cols-2">
+      <section className="relative top-64 mt-52 md:grid md:grid-cols-2 md:top-44">
         <Feature
           img={device}
           head="Access your files, anywhere"
@@ -79,7 +79,7 @@ const Container = () => {
   file types to be securely stored and shared."
         />
       </section>
-      <section className=" relative top-64 mt-32 ml-6 md:flex">
+      <section className=" relative top-64 mt-32 ml-6 md:flex md:top-48">
         <img className=" px-10 mb-5" src={productive} alt="illustration" />
         <div className="md:mt-36 md:mr-16">
           <h2 className="font-raleway font-bold text-white py-4 md:text-3xl md:max-w-xs">Stay productive, wherever you are</h2>
@@ -90,7 +90,7 @@ const Container = () => {
           <a className=" text-sm font-opensans flex gap-3 text-mycyan border-mycyan border-b-2 w-[9.6rem] pb-1 hover:text-white hover:border-white" href="/#">See how Fylo works <BsFillArrowRightCircleFill className="mt-1 shadow-xl shadow-mycyan rounded-full" /> </a>
         </div>
       </section>
-      <section className="relative top-64 mt-36 px-11">
+      <section className="relative top-64 mt-36 px-11 md:top-40">
       <div className=" ml-3 bg-quote bg-no-repeat h-9"></div>
       <div className="md:flex gap-7">
         <Testimonial
@@ -117,7 +117,7 @@ const Container = () => {
         </div>
       </section>
 
-      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-[24rem] md:max-w-4xl md:mx-auto">
+      <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-[24rem] md:max-w-4xl md:mx-auto md:top-[18rem]">
         <h2 className="text-xl font-raleway font-bold text-white py-4 text-center md:text-2xl">Get early access today</h2>
         <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto md:max-w-3xl">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
