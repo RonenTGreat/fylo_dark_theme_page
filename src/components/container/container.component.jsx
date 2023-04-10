@@ -1,3 +1,6 @@
+import { useState } from "react"
+
+
 import intro from "../../images/illustration-intro.png"
 
 import productive from "../../images/illustration-stay-productive.png"
@@ -29,6 +32,26 @@ import Testimonial from "../testimonial/testimonial.component"
 
 
 const Container = () => {
+
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(null);
+
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = event => {
+    if (!isValidEmail(event.target.value)) {
+      setError('Please enter a valid email address');
+    } else {
+      setError(null);
+    }
+
+    setEmail(event.target.value);
+  };
+
+
+
   return (
     <main className="pb-44 bg-main-color">
       <section className="bg-intro-color">
@@ -123,8 +146,11 @@ const Container = () => {
           questions, our support team would be happy to help you.</p>
         
           <form className=" flex flex-col px-8 md:block md:px-16" action="">
-          <input className="placeholder:text-gray-300 py-3 px-8 outline-none rounded-full md:pr-80" type="email" name="email" placeholder="email@example.com" />
+          <input className="placeholder:text-gray-300 py-3 px-8 outline-none rounded-full md:pr-80" type="email" name="email"  id="email"
+        value={email}
+        onChange={handleChange} placeholder="email@example.com" />
           <button className=" font-raleway text-white font-semibold bg-gradient-to-r from-mycyan to-myblue hover:bg-gradient-to-r hover:to-mycyan my-5 p-3 rounded-full md:ml-6 md:w-[13rem] md:text-sm md:p-4" type="submit">Get Started For Free</button>
+          {error && <h2 className=" ml-5 text-light-red">{error}</h2>}
           </form>
     
       </section>
