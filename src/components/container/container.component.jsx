@@ -41,7 +41,7 @@ const Container = () => {
   }
 
   const handleChange = event => {
-    if (!isValidEmail(event.target.value)) {
+    if (!isValidEmail(event.target.value) && event.target.value !== "") {
       setError('Please enter a valid email address');
     } else {
       setError(null);
@@ -142,7 +142,7 @@ const Container = () => {
 
       <section className="mx-6 py-5 text-g bg-intro-color rounded-xl shadow-black shadow-2xl relative z-30 top-[24rem] md:max-w-4xl md:mx-auto md:top-[18rem]">
         <h2 className="text-xl font-raleway font-bold text-white py-4 text-center md:text-2xl">Get early access today</h2>
-        <p className="pb-6 font-opensans text-gray-300 text-center max-w-xs mx-auto md:max-w-3xl">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        <p className="pb-6 px-4 font-opensans text-gray-300 text-center max-w-xs mx-auto md:max-w-3xl">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
         
           <form className=" flex flex-col px-8 md:block md:px-16" action="">
